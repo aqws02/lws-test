@@ -7,3 +7,8 @@ exports.app = function (a, b) {
 	console.log(a, b);
 	return a + b;
 }
+
+exports.alert = function (a) {
+
+	console.log(a);
+}
