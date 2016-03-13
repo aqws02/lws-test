@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'd:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'd:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'f:\\nodejs\\github\\modules\\lws-test',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\weisong\AppData\Roaming\npm-cache\lws-test\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\weisong\\AppData\\Roaming\\npm-cache\\lws-test\\1.0.0\\package.tgz',
+9 verbose tar pack   'f:\\nodejs\\github\\modules\\lws-test' ]
+10 verbose tarball C:\Users\weisong\AppData\Roaming\npm-cache\lws-test\1.0.0\package.tgz
+11 verbose folder f:\nodejs\github\modules\lws-test
+12 info prepublish lws-test@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\weisong\AppData\Roaming\npm-cache\lws-test\1.0.0\package.tgz
+14 silly cache afterAdd lws-test@1.0.0
+15 verbose afterAdd C:\Users\weisong\AppData\Roaming\npm-cache\lws-test\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\weisong\AppData\Roaming\npm-cache\lws-test\1.0.0\package\package.json written
+17 silly publish { name: 'lws-test',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'test',
+17 silly publish   main: './index.js',
+17 silly publish   scripts: { test: 'test' },
+17 silly publish   keywords: [ 'test' ],
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/aqws02/lws-test.git' },
+17 silly publish   author:
+17 silly publish    { name: 'liweisong',
+17 silly publish      email: 'aqws02@163.com',
+17 silly publish      url: 'http://aqws02.com/' },
+17 silly publish   engines: { node: '>= 0.9' },
+17 silly publish   licenses: [ { type: 'MIT' } ],
+17 silly publish   readme: '# lws-test\r\nlws-test\r\nlws-test\r\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '2250d4e4609b2ebc1d6097183b68b1386c102680',
+17 silly publish   bugs: { url: 'https://github.com/aqws02/lws-test/issues' },
+17 silly publish   homepage: 'https://github.com/aqws02/lws-test#readme',
+17 silly publish   _id: 'lws-test@1.0.0',
+17 silly publish   _shasum: 'eed25feb7ccb2d4033edb542bab0dd1c109d9dba',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name lws-test
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry http://registry.cnpmjs.org/
+22 silly mapToRegistry uri http://registry.cnpmjs.org/lws-test
+23 verbose publish registryBase http://registry.cnpmjs.org/
+24 silly publish uploading C:\Users\weisong\AppData\Roaming\npm-cache\lws-test\1.0.0\package.tgz
+25 verbose request uri http://registry.cnpmjs.org/lws-test
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 15:43:18
+28 verbose request id ac04ee5decd3469e
+29 http request PUT http://registry.cnpmjs.org/lws-test
+30 http 403 http://registry.cnpmjs.org/lws-test
+31 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+31 verbose headers   date: 'Sun, 13 Mar 2016 07:43:12 GMT',
+31 verbose headers   'content-type': 'application/json; charset=utf-8',
+31 verbose headers   'transfer-encoding': 'chunked',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-readtime': '6',
+31 verbose headers   'content-encoding': 'gzip' }
+32 verbose request invalidating C:\Users\weisong\AppData\Roaming\npm-cache\registry.cnpmjs.org\lws-test on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: no_perms can't publish non-scoped package, please set `config.scopes`: lws-test
+34 verbose stack     at makeError (d:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+34 verbose stack     at CachingRegistryClient.<anonymous> (d:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+34 verbose stack     at d:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:178:7
+34 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+34 verbose stack     at emitNone (events.js:72:20)
+34 verbose stack     at Gunzip.emit (events.js:166:7)
+34 verbose stack     at endReadableNT (_stream_readable.js:905:12)
+34 verbose stack     at doNTCallback2 (node.js:441:9)
+34 verbose stack     at process._tickCallback (node.js:355:17)
+35 verbose statusCode 403
+36 verbose pkgid lws-test
+37 verbose cwd f:\nodejs\github\modules\lws-test
+38 error Windows_NT 6.2.9200
+39 error argv "d:\\Program Files\\nodejs\\node.exe" "d:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+40 error node v4.2.3
+41 error npm  v2.14.7
+42 error code E403
+43 error no_perms can't publish non-scoped package, please set `config.scopes`: lws-test
+44 error If you need help, you may report this error at:
+44 error     <https://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
